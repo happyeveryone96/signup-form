@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+html{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: url('/images/bg-intro-desktop.png'), hsl(0, 100%, 74%);
+}
+h1 {
+    font-size: 50px;
+}
+#left {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    width: 30vw;
+    height: 30vh;
+    padding: 200px;
+    top: 200px;
+    left: 100px;
+}
+#right {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    padding: 200px;
+    right: 100px;
+}
+#card-header {
+    display: flex;
+    width: 30vw;
+    height: 50px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+input {
+    padding-left: 10px;
+    margin: 10px;
+    display: flex;
+    width: 25vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#claim {
+    background-color:hsl(154, 59%, 51%);
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
+    margin: 10px;
+    display: flex;
+    width: 26vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:375px) {
+    html,body {
+        max-height: 200%;
+        overflow: scroll;
+        overflow-x: hidden;
+        background:url('/images/bg-intro-desktop.png'),hsl(0, 100%, 74%);
+    }
+    .container {
+        position: relative;
+        display: block;
+    }
+    h1 {
+        font-weight: bold;
+        position: relative;
+        font-size: 50px;
+    }
+    #left {
+        top:-200px;
+        left: -150px;
+        display: block;
+        font-size: 20px;
+        position: relative;
+        color: white;
+        width: 300px;
+    }
+    #right {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 30vh;
+        padding: 200px;
+        right: 180px;
+        top: -300px;
+    }
+    #card-header {
+        display: block;
+        width: 90vw;
+        height: 50px;
+        background-color: hsl(248, 32%, 49%);
+        color: white;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    #card-body {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        height: 60vh;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    input {
+        padding-left: 10px;
+        margin: 10px;
+        display: flex;
+        width: 80vw;
+        height: 8vh;
+        justify-content: center;
+        align-items: center;
+    }
+    #claim {
+        display: block;
+        background-color:hsl(154, 59%, 51%);
+        color: white;
+        font-size: 16px;
+        width: 80vw;
+    }
+    .attribution {
+        display: none;
+    }
+}
